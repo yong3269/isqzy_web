@@ -19,7 +19,7 @@
 .search_large{
     position: absolute;
     left: 50%;
-    top: 20vh;
+    top: 24vh;
     transform: translate(-50%,0);
 }
 
@@ -28,7 +28,7 @@
 }
 
 .search_input{
-    min-width: 32rem;
+    min-width: 36rem;
     padding: .5em;
     font-size: 1.6rem;
     line-height: 1.2;
