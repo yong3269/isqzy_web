@@ -16,6 +16,13 @@
     zoom: 1;
 }
 
+.max-site{
+    position: inherit;
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+}
+
 .search_large{
     position: absolute;
     left: 50%;
@@ -42,4 +49,10 @@
     transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+.mark-site{
+    position: relative;
+    top: 100vh;
+    padding-top: 10vh;
 }
