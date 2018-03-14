@@ -1,3 +1,4 @@
+/*±³¾°*/
 .my-background {
     background-image: url("../../img/views/background/0001.jpg");
     _position: fixed;
@@ -16,18 +17,45 @@
     zoom: 1;
 }
 
-.max-site{
-    position: inherit;
-    margin: auto;
-    max-width: 1024px;
-    width: 100%;
+/*µ¼º½À¸*/
+.am-topbar {
+	background: 0 0;
+    border-width: 0;
+    margin-bottom: 0;
+}
+.am-topbar-nav>li>a {
+    color: #fff;
+	opacity: 0.8;
+	font-size: 1.4rem;
 }
 
+.am-topbar-nav>li>a:hover:after {
+     opacity: 0; 
+}
+
+.am-topbar-nav>li>a:hover {
+    background: 0 0;
+	opacity: 1;
+}
+
+.am-topbar-nav>li>a:focus {
+    background: 0 0;
+}
+
+
+@media only screen and (max-width: 639px) {
+	.am-topbar {
+		background: #00000045;
+		border-width: 0;
+	}
+}
+
+/*ËÑË÷¿ò*/
 .search_large{
     position: absolute;
-    left: 50%;
-    top: 24vh;
-    transform: translate(-50%,0);
+    margin-left: 1rem;
+	margin-top: 10vh;
+	z-index: -1;
 }
 
 .search_large form {
@@ -51,8 +79,12 @@
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
 }
 
+/*±êÇ©*/
 .mark-site{
     position: relative;
-    top: 100vh;
-    padding-top: 10vh;
+	top: 100vh;
+    padding-top: 2rem;
 }
+
+
+
