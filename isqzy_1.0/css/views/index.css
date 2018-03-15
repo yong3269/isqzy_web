@@ -1,4 +1,4 @@
-/*±³¾°*/
+/*ï¿½ï¿½ï¿½ï¿½*/
 .my-background {
     background-image: url("../../img/views/background/0001.jpg");
     _position: fixed;
@@ -17,7 +17,7 @@
     zoom: 1;
 }
 
-/*µ¼º½À¸*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 .am-topbar {
 	background: 0 0;
     border-width: 0;
@@ -50,12 +50,11 @@
 	}
 }
 
-/*ËÑË÷¿ò*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 .search_large{
-    position: absolute;
+    position: relative;
     margin-left: 1rem;
 	margin-top: 10vh;
-	z-index: -1;
 }
 
 .search_large form {
@@ -79,10 +78,10 @@
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
 }
 
-/*±êÇ©*/
+/*ï¿½ï¿½Ç©*/
 .mark-site{
     position: relative;
-	top: 100vh;
+	top: 80vh;
     padding-top: 2rem;
 }
 
