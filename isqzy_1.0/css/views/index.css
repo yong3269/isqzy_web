@@ -45,25 +45,27 @@
 
 @media only screen and (max-width: 639px) {
 	.am-topbar {
-		background: #00000045;
+		background: #000000b3;
 		border-width: 0;
 	}
 }
 
 /*ËÑË÷¿ò*/
 .search_large{
-    position: absolute;
+    position: relative;
     margin-left: 1rem;
-	margin-top: 10vh;
-	z-index: -1;
+	margin-top: 20vh;
+	
 }
 
 .search_large form {
     display: inline-flex;
+	width: 98%;
+	max-width: 42rem;
 }
 
 .search_input{
-    min-width: 36rem;
+	width: 90%;
     padding: .5em;
     font-size: 1.6rem;
     line-height: 1.2;
@@ -82,7 +84,7 @@
 /*±êÇ©*/
 .mark-site{
     position: relative;
-	top: 100vh;
+	margin-top: 80vh;
     padding-top: 2rem;
 }
 
