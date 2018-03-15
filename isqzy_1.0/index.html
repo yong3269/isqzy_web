@@ -12,52 +12,19 @@
     </head>  
     <body>
         <div class="my-background"></div>
-        <div class="am-container">
-            <div class="am-g am-g-fixed">
-                <!-- 菜单左
-                <div class="am-u-sm-8">
-					<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only blog-button" data-am-collapse="{target: '#blog-collapse'}" ><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
-					<div class="am-collapse am-topbar-collapse" id="blog-collapse">
-						<ul class="am-nav am-nav-pills am-topbar-nav">
-							<li><a href="">首页</a></li>
-							<li><a href="">发现</a></li>
-							<li><a href="">图片</a></li>
-							<li><a href="">页面</a></li>
-							<li><a href="">存档</a></li>
-						</ul>
-					</div>
-				</div>
-                <!-- 菜单右
-                <div class="am-u-sm-4">
-                    
-                </div>
-				 -->
-				
-				<header class="am-topbar">
-				  <!-- <h1 class="am-topbar-brand">
+
+		<header class="am-topbar" style="position:absolute;width:100%;z-index:11;">
+			<div class="am-container">
+				<h1 class="am-topbar-brand">
 					<a href="#">Amaze UI</a>
-				  </h1> -->
+				</h1>
+				<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
 
-				  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
-
-				  <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+				<div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
 					<ul class="am-nav am-nav-pills am-topbar-nav">
-					  <li><a href="#">首页</a></li>
-					  <li><a href="#">项目</a></li>
-					  <li class="am-dropdown" data-am-dropdown>
-						<a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
-						  下拉 <span class="am-icon-caret-down"></span>
-						</a>
-						<ul class="am-dropdown-content">
-						  <li class="am-dropdown-header">标题</li>
-						  <li><a href="#">1. 去月球</a></li>
-						  <li class="am-active"><a href="#">2. 去火星</a></li>
-						  <li><a href="#">3. 还是回地球</a></li>
-						  <li class="am-disabled"><a href="#">4. 下地狱</a></li>
-						  <li class="am-divider"></li>
-						  <li><a href="#">5. 桥头一回首</a></li>
-						</ul>
-					  </li>
+						<li><a href="#">首页</a></li>
+						<li><a href="#">发现</a></li>
+						<li><a href="#">项目</a></li>
 					</ul>
 
 					<!-- <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
@@ -77,44 +44,56 @@
 					</div> -->
 
 					<div class="am-topbar-right">
-					  <!-- <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm">登录</button> -->
-					  <ul class="am-nav am-nav-pills am-topbar-nav">
-					  <li><a href="#">登录</a></li>
-					  <li><a href="#">注册</a></li>
-					  </ul>
+						<!-- <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm">登录</button> -->
+						<ul class="am-nav am-nav-pills am-topbar-nav">
+							<li><a href="#">登录</a></li>
+							<li><a href="#">注册</a></li>
+							<li class="am-dropdown" data-am-dropdown>
+								<a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+									下拉 <span class="am-icon-caret-down"></span>
+								</a>
+								<ul class="am-dropdown-content">
+									 <li class="am-dropdown-header">标题</li>
+									 <li><a href="#">1. 去月球</a></li>
+									 <li class="am-active"><a href="#">2. 去火星</a></li>
+									 <li><a href="#">3. 还是回地球</a></li>
+									 <li class="am-disabled"><a href="#">4. 下地狱</a></li>
+									 <li class="am-divider"></li>
+									 <li><a href="#">5. 桥头一回首</a></li>
+								</ul>
+							</li>
+						</ul>
 					</div>
-				  </div>
-				</header>
-
-                <!-- 百度搜索框 -->
-                <div class="search_large">
-                    <form action="http://www.baidu.com/baidu" target="_blank">  
-                        <input name=tn type=HIDDEN value=baidu>  
-                        <!-- <a href="http://www.baidu.com/"><img src="http://img.baidu.com/img/logo-80px.gif" alt="Baidu" align="bottom" border="0"></a> -->
-                        <input id="kw" class="search_input" type=text name=word size=30 baiduSug=1>  
-                        <button type="submit" class="am-btn am-btn-default">百度一下</button>
-                    </form>
-                    
-                    <!-- 百度搜索框提示 -->
-                    <!-- <script charset="gbk" src="http://www.baidu.com/js/opensug.js"></script> -->
-                    <script charset="utf-8" src="./js/plugins/bs.js"></script>
-                </div>
-                
-                <div class="mark-site">
-                    <ul class="am-avg-sm-2 am-avg-md-3 am-avg-lg-4 am-thumbnails">
-                        <li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-1.jpg" /></li>
-                        <li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-2.jpg" /></li>
-                        <li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-3.jpg" /></li>
-                        <li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-4.jpg" /></li>
-                        <li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-1.jpg" /></li>
-                        <li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-2.jpg" /></li>
-                        <li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-3.jpg" /></li>
-                        <li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-4.jpg" /></li>
-                    </ul>
-                </div>
-
-
-            </div>
+				</div>
+			</div>
+		</header>
+		<div class="am-container">
+			<!-- 百度搜索框 -->
+			<div class="search_large">
+				<form action="http://www.baidu.com/baidu" target="_blank">  
+					<input name=tn type=HIDDEN value=baidu>  
+					<!-- <a href="http://www.baidu.com/"><img src="http://img.baidu.com/img/logo-80px.gif" alt="Baidu" align="bottom" border="0"></a> -->
+					<input id="kw" class="search_input" type=text name=word size=30 baiduSug=1>
+					<button type="submit" class="am-btn am-btn-default am-icon-search"></button>
+				</form>
+				<!-- 百度搜索框提示 -->
+				<!-- <script charset="gbk" src="http://www.baidu.com/js/opensug.js"></script> -->
+				<script charset="utf-8" src="./js/plugins/bs.js"></script>
+			</div>
+			
+			<!-- 图片列表 -->
+			<div class="mark-site">
+				<ul class="am-avg-sm-2 am-avg-md-3 am-avg-lg-4 am-thumbnails">
+					<li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-1.jpg" /></li>
+					<li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-2.jpg" /></li>
+					<li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-3.jpg" /></li>
+					<li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-4.jpg" /></li>
+					<li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-1.jpg" /></li>
+					<li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-2.jpg" /></li>
+					<li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-3.jpg" /></li>
+					<li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-4.jpg" /></li>
+				</ul>
+			</div>
         </div>
 		<!--[if (gte IE 9)|!(IE)]><!-->
 		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
