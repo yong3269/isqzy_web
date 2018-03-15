@@ -1,39 +1,99 @@
-<!DOCTYPE html>  
-<html>  
-    <head>  
-        <meta charset="utf-8">  
-        <title>ISQZY</title>
-        
-        <link href="https://cdn.bootcss.com/amazeui/2.7.2/css/amazeui.min.css" rel="stylesheet">
-		<link href="./css/views/index.css" type="text/css" rel="stylesheet" />
-        <style>  
-            /*这里修改提示框的字体样式*/  
-        </style>  
-    </head>  
-    <body>
-        <div class="my-background"></div>
+<!DOCTYPE html>
+<!--[if lte IE 7 ]>
+	<html class="no-js ie lte7 lte8 lte9 ">
+<![endif]-->
 
-		<header class="am-topbar" style="position:absolute;width:100%;z-index:11;">
+<!--[if IE 8 ]>
+		<html class="no-js ie ie8 lte8 lte9 ">
+<![endif]-->
+
+<!--[if IE 9 ]>
+		<html class="no-js ie ie9 lte9 ">
+<![endif]-->
+
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="QZY一个小空间">
+	<!-- 关键字 -->
+	<meta name="keywords" content="QZY">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>ISQZY</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<!-- 网站图标 -->
+	<link rel="alternate icon" type="image/png" href="">
+	<link rel="apple-touch-icon-precomposed" href="//s.amazeui.org/assets/2.x/i/app-icon72x72@2x.png">
+	<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-startup-image" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" href="//s.amazeui.org/assets/2.x/i/startup-640x1096.png">
+
+
+	<!--[if lt IE 9]>
+		<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://cdn.amazeui.org/modernizr/2.8.3/modernizr.js"></script>
+		<script src="//s.amazeui.org/assets/2.x/js/amazeui.ie8polyfill.min.js"></script>
+	<![endif]-->
+
+	<link rel="canonical" href="http://amazeui.org?_ver=2.x" />
+
+	<link href="https://cdn.bootcss.com/amazeui/2.7.2/css/amazeui.min.css" rel="stylesheet">
+	<link href="./css/views/index.css" type="text/css" rel="stylesheet" />
+	<style>
+		/*这里修改提示框的字体样式*/
+	</style>
+</head>
+
+<body class="amz-index" data-amui="1.0">
+
+	<!--[if lte IE 9 ]>
+		<div class="am-alert am-alert-danger ie-warning" data-am-alert>
+			<button type="button" class="am-close">&times;</button>
 			<div class="am-container">
-				<h1 class="am-topbar-brand">
-					<a href="#">Amaze UI</a>
-				</h1>
-				<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+				365 安全卫士提醒：你的浏览器太古董了，妹子无爱，<a
+				href="http://browsehappy.com/" target="_blank">速速点击换一个</a>！
+			</div>
+		</div>
+	<![endif]-->
 
-				<div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
-					<ul class="am-nav am-nav-pills am-topbar-nav">
-						<li><a href="#">首页</a></li>
-						<li><a href="#">发现</a></li>
-						<li><a href="#">项目</a></li>
-					</ul>
+	<div class="my-background"></div>
 
-					<!-- <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
+	<header class="am-topbar" style="position:absolute;width:100%;z-index:11;">
+		<div class="am-container">
+			<h1 class="am-topbar-brand">
+				<a href="#">IS QZY</a>
+			</h1>
+			<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}">
+				<span class="am-sr-only">导航切换</span>
+				<span class="am-icon-bars"></span>
+			</button>
+
+			<div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+				<ul class="am-nav am-nav-pills am-topbar-nav">
+					<li>
+						<a href="#">首页</a>
+					</li>
+					<li>
+						<a href="#">发现</a>
+					</li>
+					<li>
+						<a href="#">项目</a>
+					</li>
+				</ul>
+
+				<!-- <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
 					  <div class="am-form-group">
 						<input type="text" class="am-form-field am-input-sm" placeholder="搜索">
 					  </div>
 					</form> -->
 
-					<!-- <div class="am-topbar-right">
+				<!-- <div class="am-topbar-right">
 					  <div class="am-dropdown" data-am-dropdown="{boundary: '.am-topbar'}">
 						<button class="am-btn am-btn-secondary am-topbar-btn am-btn-sm am-dropdown-toggle" data-am-dropdown-toggle>其他 <span class="am-icon-caret-down"></span></button>
 						<ul class="am-dropdown-content">
@@ -43,66 +103,98 @@
 					  </div>
 					</div> -->
 
-					<div class="am-topbar-right">
-						<!-- <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm">登录</button> -->
-						<ul class="am-nav am-nav-pills am-topbar-nav">
-							<li><a href="#">登录</a></li>
-							<li><a href="#">注册</a></li>
-							<li class="am-dropdown" data-am-dropdown>
-								<a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
-									下拉 <span class="am-icon-caret-down"></span>
-								</a>
-								<ul class="am-dropdown-content">
-									 <li class="am-dropdown-header">标题</li>
-									 <li><a href="#">1. 去月球</a></li>
-									 <li class="am-active"><a href="#">2. 去火星</a></li>
-									 <li><a href="#">3. 还是回地球</a></li>
-									 <li class="am-disabled"><a href="#">4. 下地狱</a></li>
-									 <li class="am-divider"></li>
-									 <li><a href="#">5. 桥头一回首</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+				<div class="am-topbar-right">
+					<!-- <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm">登录</button> -->
+					<ul class="am-nav am-nav-pills am-topbar-nav">
+						<li>
+							<a href="#">登录</a>
+						</li>
+						<li>
+							<a href="#">注册</a>
+						</li>
+						<li class="am-dropdown" data-am-dropdown>
+							<a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+								下拉
+								<span class="am-icon-caret-down"></span>
+							</a>
+							<ul class="am-dropdown-content">
+								<li class="am-dropdown-header">标题</li>
+								<li>
+									<a href="#">1. 去月球</a>
+								</li>
+								<li class="am-active">
+									<a href="#">2. 去火星</a>
+								</li>
+								<li>
+									<a href="#">3. 还是回地球</a>
+								</li>
+								<li class="am-disabled">
+									<a href="#">4. 下地狱</a>
+								</li>
+								<li class="am-divider"></li>
+								<li>
+									<a href="#">5. 桥头一回首</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
 				</div>
 			</div>
-		</header>
-		<div class="am-container">
-			<!-- 百度搜索框 -->
-			<div class="search_large">
-				<form action="http://www.baidu.com/baidu" target="_blank">  
-					<input name=tn type=HIDDEN value=baidu>  
-					<!-- <a href="http://www.baidu.com/"><img src="http://img.baidu.com/img/logo-80px.gif" alt="Baidu" align="bottom" border="0"></a> -->
-					<input id="kw" class="search_input" type=text name=word size=30 baiduSug=1>
-					<button type="submit" class="am-btn am-btn-default am-icon-search"></button>
-				</form>
-				<!-- 百度搜索框提示 -->
-				<!-- <script charset="gbk" src="http://www.baidu.com/js/opensug.js"></script> -->
-				<script charset="utf-8" src="./js/plugins/bs.js"></script>
-			</div>
-			
-			<!-- 图片列表 -->
-			<div class="mark-site">
-				<ul class="am-avg-sm-2 am-avg-md-3 am-avg-lg-4 am-thumbnails">
-					<li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-1.jpg" /></li>
-					<li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-2.jpg" /></li>
-					<li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-3.jpg" /></li>
-					<li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-4.jpg" /></li>
-					<li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-1.jpg" /></li>
-					<li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-2.jpg" /></li>
-					<li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-3.jpg" /></li>
-					<li><img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-4.jpg" /></li>
-				</ul>
-			</div>
-        </div>
-		<!--[if (gte IE 9)|!(IE)]><!-->
-		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-		<!--<![endif]-->
-		<!--[if lte IE 8 ]>
+		</div>
+	</header>
+	<div class="am-container">
+		<!-- 百度搜索框 -->
+		<div class="search_large">
+			<form action="http://www.baidu.com/baidu" target="_blank">
+				<input name=tn type=HIDDEN value=baidu>
+				<!-- <a href="http://www.baidu.com/"><img src="http://img.baidu.com/img/logo-80px.gif" alt="Baidu" align="bottom" border="0"></a> -->
+				<input id="kw" class="search_input" type=text name=word size=30 baiduSug=1>
+				<button type="submit" class="am-btn am-btn-default am-icon-search"></button>
+			</form>
+			<!-- 百度搜索框提示 -->
+			<!-- <script charset="gbk" src="http://www.baidu.com/js/opensug.js"></script> -->
+			<script charset="utf-8" src="./js/plugins/bs.js"></script>
+		</div>
+
+		<!-- 图片列表 -->
+		<div class="mark-site">
+			<ul class="am-avg-sm-2 am-avg-md-3 am-avg-lg-4 am-thumbnails">
+				<li>
+					<img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-1.jpg" />
+				</li>
+				<li>
+					<img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />
+				</li>
+				<li>
+					<img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-3.jpg" />
+				</li>
+				<li>
+					<img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-4.jpg" />
+				</li>
+				<li>
+					<img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-1.jpg" />
+				</li>
+				<li>
+					<img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />
+				</li>
+				<li>
+					<img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-3.jpg" />
+				</li>
+				<li>
+					<img class="am-thumbnail" src="http://s.amazeui.org/media/i/demos/bing-4.jpg" />
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--[if (gte IE 9)|!(IE)]><!-->
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<!--<![endif]-->
+	<!--[if lte IE 8 ]>
 		<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
 		<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
 		<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
 		<![endif]-->
-		<script src="https://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
-    </body>  
-</html>  
+	<script src="https://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
+</body>
+
+</html>

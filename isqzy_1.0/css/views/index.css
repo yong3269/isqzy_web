@@ -1,4 +1,4 @@
-/*����*/
+/*首页背景*/
 .my-background {
     background-image: url("../../img/views/background/0001.jpg");
     _position: fixed;
@@ -17,7 +17,7 @@
     zoom: 1;
 }
 
-/*������*/
+/*导航栏*/
 .am-topbar {
 	background: 0 0;
     border-width: 0;
@@ -50,12 +50,11 @@
 	}
 }
 
-/*������*/
+/*搜索框*/
 .search_large{
     position: relative;
     margin-left: 1rem;
-	margin-top: 20vh;
-	
+    margin-top: 20vh;
 }
 
 .search_large form {
@@ -81,7 +80,14 @@
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
 }
 
-/*��ǩ*/
+@media only screen and (max-width: 639px) {
+	.search_large{
+        margin-left: 0rem;
+        margin-top: 10vh;
+    }
+}
+
+/*图片列表*/
 .mark-site{
     position: relative;
 	margin-top: 80vh;
