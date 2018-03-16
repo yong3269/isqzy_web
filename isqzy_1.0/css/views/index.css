@@ -54,16 +54,16 @@
 .search_large{
     width: 100%;
     position: relative;
-    margin-top: 20vh;
+    margin-top: 24vh;
 }
 
 .search_large form {
     display: inline-flex;
     position: relative;
-	width: 98%;
-    max-width: 42rem;
-    /* left: 50%;
-    transform: translate(-50%,0); */
+	width: 100%;
+    max-width: 48rem;
+    left: 50%;
+    transform: translate(-50%,0);
 }
 
 .search_input{
