@@ -23,8 +23,11 @@
     border-width: 0;
     margin-bottom: 0;
 }
+.am-topbar a {
+	color: rgba(158, 158, 158, 0.8);
+}
 .am-topbar-nav>li>a {
-    color: #fff;
+    color: rgba(158, 158, 158, 0.8);
 	opacity: 0.8;
 	font-size: 1.4rem;
 }
@@ -45,7 +48,7 @@
 
 @media only screen and (max-width: 639px) {
 	.am-topbar {
-		background: #000000b3;
+		background: rgba(255, 255, 255, 0.7);
 		border-width: 0;
 	}
 }
@@ -56,7 +59,7 @@
     position: relative;
     margin-top: 16vh;
     text-align: center;
-    color:#ddddddbb;
+    color:rgba(158, 158, 158, 0.8);
 }
 
 .search_large form {
@@ -73,7 +76,7 @@
     padding: .5em;
     font-size: 1.6rem;
     line-height: 1.2;
-    color: #555;
+    color: rgba(158, 158, 158, 0.8);
     background-color: #fff;
     background-image: none;
     border: 1px solid #ccc;
