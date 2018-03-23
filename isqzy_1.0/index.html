@@ -171,6 +171,15 @@
 			<!-- <script charset="gbk" src="http://www.baidu.com/js/opensug.js"></script> -->
 			<script charset="utf-8" src="./js/plugins/bs.js"></script>
 		</div>
+		
+		<div>
+			<div id="img_uploader">
+				
+				<input type="file" id="file" />
+				<a id="start_upload" href="javascript:void 0;">Upload File</a>
+				<button id="getSmallImg">获取缩略图</button>
+			</div>
+		</div>
 
 		<!-- 图片列表 -->
 		<div class="mark-site">
@@ -211,6 +220,80 @@
 		<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
 		<![endif]-->
 	<script src="https://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
+	<script src="https://unpkg.com/qiniu-js@v2.2.0/dist/qiniu.min.js"></script>
+	<script>
+		$("#file").unbind("change").bind("change",function(){
+
+			//测试域名
+			var domain = 'http://p5zea7lfw.bkt.clouddn.com';
+
+			var file = this.files[0];
+			if(file){
+				var key = 'test'+ new Date().getTime()+'.jpg';
+				
+				//文件上传监控器
+				var observer = {
+					next(res){
+						console.info("next::"+res);
+					},
+					error(err){
+						console.error("error::"+err);
+					}, 
+					//上传完成
+					complete(res){
+						console.info("complete::"+res);
+						alert("上传完成")
+						$("#img_uploader").append('<img src="'+ domain +'/'+ key +'"/>');
+					}
+				}
+				
+				var putExtra = {
+					fname: file.name,
+					params: {},
+					mimeType: [] || null
+				};
+				var config = {};
+				var token = 'ADKocsUYZVQCfR0owwoDn8t9LMMwsTe7uOQpSvYT:GwS1QjLNE7AEshqVOAfRfHqRe9s=:eyJzY29wZSI6Imx5bGx0ZXN0IiwiZGVhZGxpbmUiOjE1MjE3OTcyNjJ9';
+				// $(document).ready(function(){
+				// 	$.ajax({
+				// 		url:"http://localhost:8080/qiniu/uptoken",
+				// 		async:false,
+				// 		success:function(res){
+				// 			console.log('token: '+res);
+				// 			token = res;
+				// 		}
+				// 	});
+				// });
+
+				//上传图片
+				var observable = qiniu.upload(file, key, token, putExtra, config)
+				$("#start_upload").click(function(){
+					var subscription = observable.subscribe(observer) // 上传开始
+					console.log(subscription);
+
+				});
+
+				//获取缩略图片
+				var fopArr = [{
+					fop: 'imageView2', // 指定imageView2操作
+					mode: 3,           // 此参数同imageView2函数的参数，下同
+					w: 100,
+					h: 100,
+					q: 100,
+					format: 'png'
+				}];
+
+				$("#getSmallImg").click(function(){
+					var newUrl = qiniu.pipeline(fopArr, key, domain);
+					$("#img_uploader").append('<img src="'+ newUrl +'"/>');
+				});
+
+			}
+		});
+		// or
+		//var subscription = observable.subscribe(next, error, complete) // 这样传参形式也可以
+		//subscription.unsubscribe() // 上传取消
+	</script>
 </body>
 
 </html>
